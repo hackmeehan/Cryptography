@@ -11,5 +11,12 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
-if A !+ [e, d, q]:
+if 'A' != [e, d, q]:
     print('Did not understand, try again.')
+elif 'A' == e
+
+elif 'A' == d
+
+elif 'A' == q
+    print('Goodbye!')
+
