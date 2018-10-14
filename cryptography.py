@@ -13,15 +13,16 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 A = input('Enter e to encrypt, d to decrypt, or q to quit: ')
 
-if A != [e, d, q]:
+
+if A == 'e':
+    message = input('Message: ')
+    for i in message:
+        print(associations.find(i))
+elif A == 'd':
+    message2 = input('Message: ')
+    for j in message2:
+        print(associations[index])
+elif A != ['e', 'd', 'q']:
     print('Did not understand, try again.')
-
-elif A == e
-
-
-elif A == d
-
-
-else A == q
-    print('Goodbye!')
-
+elif A == 'q':
+    print('Goodbye!')print("Hello, world.")
