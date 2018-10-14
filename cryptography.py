@@ -21,8 +21,8 @@ if A == 'e':
 elif A == 'd':
     message2 = input('Message: ')
     for j in message2:
-        print(associations[index])
+        print(associations[j])
 elif A != ['e', 'd', 'q']:
     print('Did not understand, try again.')
 elif A == 'q':
-    print('Goodbye!')print("Hello, world.")
+    print('Goodbye!')
