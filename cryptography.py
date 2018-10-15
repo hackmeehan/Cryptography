@@ -27,7 +27,7 @@ if A == 'e':
             b = associations.find(m[0])
             c = associations.find(m[1])
             print(b+c)
-        else len(key) < len(message):
+        else:
             l = (len(message)/len(key))
             key = key*l
             b = associations.find(m[0])
