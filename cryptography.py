@@ -21,10 +21,7 @@ if A == 'e':
         if len(key) == len(message):
             b = associations.find(m[0])
             c = associations.find(m[1])
-            e = b+c
-            d = associations.find(e)
-            print(d)
-            
+            print(associations.find(b+c))
         elif len(key) > len(message):
             key = key[0:len(message)]
             b = associations.find(m[0])
