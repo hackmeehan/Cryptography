@@ -21,7 +21,10 @@ if A == 'e':
         if len(key) == len(message):
             b = associations.find(m[0])
             c = associations.find(m[1])
-            print(b+c)
+            e = b+c
+            d = associations.find(e)
+            print(d)
+            
         elif len(key) > len(message):
             key = key[0:len(message)]
             b = associations.find(m[0])
@@ -38,7 +41,7 @@ elif A == 'd':
     key2 = input('Key: ')
     for j in message2:
         print(associations[j])
-elif A != ['e', 'd', 'q']:
-    print('Did not understand, try again.')
 elif A == 'q':
     print('Goodbye!')
+else:
+    print('Did not understand, try again.')
