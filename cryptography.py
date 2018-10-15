@@ -13,13 +13,29 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 A = input('Enter e to encrypt, d to decrypt, or q to quit: ')
 
-
 if A == 'e':
     message = input('Message: ')
-    for i in message:
-        print(associations.find(i))
+    key = input('Key: ')
+    a = zip(message, key)
+    for m in a:
+        if len(key) == len(message):
+            b = associations.find(m[0])
+            c = associations.find(m[1])
+            print(b+c)
+        elif len(key) > len(message):
+            key = key[0:len(message)]
+            b = associations.find(m[0])
+            c = associations.find(m[1])
+            print(b+c)
+        else len(key) < len(message):
+            l = (len(message)/len(key))
+            key = key*l
+            b = associations.find(m[0])
+            c = associations.find(m[1])
+            print(b+c)
 elif A == 'd':
     message2 = input('Message: ')
+    key2 = input('Key: ')
     for j in message2:
         print(associations[j])
 elif A != ['e', 'd', 'q']:
