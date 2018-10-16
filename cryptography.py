@@ -24,7 +24,7 @@ if A == 'e':
             b = associations.find(l[0])
             c = associations.find(l[1])
             d = b+c
-            e = associations[d]
+            e = str(associations[d])
             print(e)
     if f < z:
         e = z/f
@@ -54,6 +54,7 @@ elif A == 'd':
         h = p-t
         print(h)
         print(associations[h])
+        
 elif A == 'q':
     print('Goodbye!')
 else:
