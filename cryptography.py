@@ -36,7 +36,7 @@ if A == 'e':
             c = associations.find(l[1])
             d = (b+c)
             e = associations[d]
-            print(e)
+            q = print(e)
     if f > z:
         for l in a:
             b = associations.find(l[0])
@@ -44,17 +44,22 @@ if A == 'e':
             d = (b+c)
             e = associations[d]
             print(e)
+            
 elif A == 'd':
     message2 = input('Message: ')
     key2 = input('Key: ')
-    for o in message2:
+    '''for o in message2:
         p = associations.find(o)
     for u in key2:
         t = associations.find(u)
-        h = p-t
-        print(h)
-        print(associations[h])
-        
+        print(associations[p-t])'''
+    for q in message2:
+        for s in key2:
+            B = associations.find(q[0])
+            C = associations.find(s[0])
+            D = (B-C)
+            E = associations[D]
+            print(E)
 elif A == 'q':
     print('Goodbye!')
 else:
