@@ -53,13 +53,13 @@ elif A == 'd':
     for u in key2:
         t = associations.find(u)
         print(associations[p-t])'''
-    for q in message2:
+    for l in message2:
         for s in key2:
-            B = associations.find(q[0])
-            C = associations.find(s[0])
-            D = (B-C)
-            E = associations[D]
-            print(E)
+            B = associations.find(s)
+        for l in message2:
+            C = associations.find(l)
+            D = B-C
+        
 elif A == 'q':
     print('Goodbye!')
 else:
