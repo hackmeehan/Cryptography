@@ -77,7 +77,7 @@ while A != 'q':
                 e = associations[d]
                 print(e, end="")
     else:
-        print('Did not understand, try again.')
+        print('Did not understand command, try again.')
     print('')
     A = input('Enter e to encrypt, d to decrypt or q to quit: ')
     
