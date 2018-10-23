@@ -76,11 +76,14 @@ while A != 'q':
                 d = (b-c)
                 e = associations[d]
                 print(e, end="")
-            
-    elif A == 'q':
-        print('Goodbye!')
+    else:
+        print('Did not understand, try again.')
+    print('')
+    A = input('Enter e to encrypt, d to decrypt or q to quit: ')
+    
 else:
-    print('Did not understand, try again.')
-A = input('Enter e to encrypt, d to decrypt or q to quit ')
+    print('Goodbye!')
+
+
 
 # +KF;B(CH=NIZ}m;R\Dt
