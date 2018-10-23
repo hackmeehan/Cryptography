@@ -25,7 +25,7 @@ if A == 'e':
             c = associations.find(l[1])
             d = b+c
             e = str(associations[d])
-            print(e)
+            print(e, end="")
     if f < z:
         e = z/f
         import math
@@ -36,29 +36,46 @@ if A == 'e':
             c = associations.find(l[1])
             d = (b+c)
             e = associations[d]
-            q = print(e)
+            q = print(e, end="")
     if f > z:
         for l in a:
             b = associations.find(l[0])
             c = associations.find(l[1])
             d = (b+c)
             e = associations[d]
-            print(e)
+            print(e, end="")
             
 elif A == 'd':
     message2 = input('Message: ')
     key2 = input('Key: ')
-    '''for o in message2:
-        p = associations.find(o)
-    for u in key2:
-        t = associations.find(u)
-        print(associations[p-t])'''
-    for l in message2:
-        for s in key2:
-            B = associations.find(s)
-        for l in message2:
-            C = associations.find(l)
-            D = B-C
+    z = len(message2)
+    f = len(key2)
+    a = zip(message2, key2)
+    if f == z:
+        for l in a:
+            b = associations.find(l[0])
+            c = associations.find(l[1])
+            d = b-c
+            e = str(associations[d])
+            print(e, end="")
+    if f < z:
+        e = z/f
+        import math
+        r = math.ceil(e)
+        key2 = r*key2
+        for l in zip(message2, key2):
+            b = associations.find(l[0])
+            c = associations.find(l[1])
+            d = (b-c)
+            e = associations[d]
+            q = print(e, end="")
+    if f > z:
+        for l in a:
+            b = associations.find(l[0])
+            c = associations.find(l[1])
+            d = (b-c)
+            e = associations[d]
+            print(e, end="")
         
 elif A == 'q':
     print('Goodbye!')
