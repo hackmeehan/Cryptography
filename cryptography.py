@@ -78,8 +78,8 @@ while A != 'q':
                 print(e, end="")
     else:
         print('Did not understand command, try again.')
-    print('')
-    A = input('Enter e to encrypt, d to decrypt or q to quit: ')
+    print(' ')
+    A = input('Enter e to encrypt, d to decrypt, or q to quit: ')
     
 else:
     print('Goodbye!')
