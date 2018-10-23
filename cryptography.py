@@ -1,7 +1,7 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Jack Meehan
+Credit: None, just help from Eric and Mr. Dennison
 
 Assignment:
 
